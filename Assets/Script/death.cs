@@ -9,6 +9,8 @@ public class death : MonoBehaviour
     public int numberScenes;
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(numberScenes);
+        if (other.CompareTag("Player"))
+            SceneManager.LoadScene(numberScenes);
+
     }
 }
