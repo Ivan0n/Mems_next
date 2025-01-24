@@ -19,7 +19,8 @@ public class sobiratel : MonoBehaviour
         Debug.Log(other.gameObject.name + " " + other.gameObject.tag);
         if (other.CompareTag("Player"))
         {
-            craft_count ga = GameObject.Find("Counter").GetComponent<craft_count>();
+            craft_count ga = GameObject.Find("Counter")
+                .GetComponent<craft_count>();
             if (id == 1)
             {
                 
