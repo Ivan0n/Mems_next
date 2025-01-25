@@ -7,6 +7,7 @@ public class ObjectSpawner : MonoBehaviour
     // Объект, который нужно спавнить
     public GameObject objectToSpawn;
     public GameObject objectToSpawn2;
+    
 
     // Радиус, в пределах которого объекты будут спавниться
     public float spawnRadius = 2.0f;
@@ -24,6 +25,7 @@ public class ObjectSpawner : MonoBehaviour
 
             // Спавним объект
             Instantiate(objectToSpawn2, randomPosition, Quaternion.identity);
+            
         }
     }
     // Метод для спавна объектов
@@ -37,6 +39,7 @@ public class ObjectSpawner : MonoBehaviour
 
             // Спавним объект
             Instantiate(objectToSpawn, randomPosition, Quaternion.identity);
+            
         }
     }
     private void Start()
