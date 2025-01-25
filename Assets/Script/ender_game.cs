@@ -11,7 +11,8 @@ public class ender_game : MonoBehaviour
     public int numberScenes;
     public TMP_Text mushroom_text;
     public TMP_Text logs_text;
-    
+    public craft_count ga;
+
     public int mush = 0;
     public int logs = 0;
 
@@ -19,12 +20,13 @@ public class ender_game : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        craft_count ga = GameObject.Find("Counter").GetComponent<craft_count>();
+        ga = GameObject.Find("Counter").GetComponent<craft_count>();
     }
     public void End()
     {
         mush = craft_count.mushromms;
         logs = craft_count.logs;
+        ga.clear();
         Cursor.lockState = CursorLockMode.Confined;
         Time.timeScale = 0.0f;
         panel.SetActive(true);

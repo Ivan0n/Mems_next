@@ -27,6 +27,11 @@ public class craft_count : MonoBehaviour
 
 
     }
+    public void clear()
+    {
+        mushromms = 0;
+        logs = 0;
+    }
     public void logs_plus()
     {
        
